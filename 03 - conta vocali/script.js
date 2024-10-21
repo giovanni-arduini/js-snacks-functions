@@ -5,12 +5,12 @@ const word = "javascript";
 
 // Dichiara la funzione qui.
 
-function howManyVowelsIn(parola) {
+function howManyVowelsIn(thisWord) {
   const vowels = "AaIiUuEeOo";
   let wordVowels = [];
 
-  for (i = 0; i < parola.length; i++) {
-    letter = parola.charAt(i);
+  for (i = 0; i < thisWord.length; i++) {
+    letter = thisWord.charAt(i);
     if (vowels.includes(letter)) {
       wordVowels.push(letter);
     }
@@ -21,4 +21,5 @@ function howManyVowelsIn(parola) {
 // Invoca la funzione qui e stampa il risultato in console
 
 console.log("Il numero di vocali nella parola è", howManyVowelsIn(word));
+
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
